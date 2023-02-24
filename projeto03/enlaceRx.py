@@ -67,11 +67,13 @@ class RX(object):
         self.threadResume()
         return(b)
 
-    def getNData(self, size):
-        while(self.getBufferLen() < size):
-            time.sleep(0.05)                 
-        return(self.getBuffer(size))
-
+    def getNData(self, size, timeout=5):
+        timeout = time.time() + 5
+        while self.getBufferLen() < size:
+            if time.time() > timeout:
+                return None
+            time.sleep(1)
+        return self.getBuffer(size)
 
     def clearBuffer(self):
         self.buffer = b""

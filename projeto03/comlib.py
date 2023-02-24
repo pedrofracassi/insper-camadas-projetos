@@ -1,5 +1,6 @@
 import numpy as np
 import time
+from comandos import flags, packet_type
 
 class ComLib:
     def __init__(self, com):

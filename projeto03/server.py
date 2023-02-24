@@ -3,9 +3,9 @@ import time
 import numpy as np
 import comandos
 import random
-import lib as comlib
-from comandos import dados, flags
+import comlib as comlib
 import serial.tools.list_ports
+from packetlib import PacketLib
 
 print('Selecionando porta automaticamente...')
 ports = list(serial.tools.list_ports.comports())
@@ -23,7 +23,9 @@ print(f'Porta selecionada: {serialName}')
 #use uma das 3 opcoes para atribuir à variável a porta usada
 #serialName = "/dev/ttyS3"           # Ubuntu (variacao de)
 #serialName = "/dev/tty.usbmodem1411" # Mac    (variacao de)
-# serialName = "COM4"                  # Windows(variacao de)
+
+def progressbar(current: int, total: int):
+    return f"[{'='*current}{'-'*(total-current)}] {current}/{total}"
 
 def main():
     try:
@@ -31,61 +33,92 @@ def main():
         com1 = enlace(serialName)
         
         com1.enable()
-        print("Esperando um byte de sacrifício")
-        rxBuffer, nRx = com1.getData(1)
-        com1.rx.clearBuffer()
-        time.sleep(.1)
+#        print("Esperando um byte de sacrifício")
+#        rxBuffer, nRx = com1.getData(1)
+#        com1.rx.clearBuffer()
+#        time.sleep(.1)
 
         lib = comlib.ComLib(com1)
+        plib = PacketLib()
+        
+        packet = None
+        while True:
+            packet_bytes = plib.get_next_packet(lib)
+            if packet_bytes is None:
+                continue
+            else:
+                packet = plib.decode_packet(packet_bytes)
+                print('Pacote recebido:', packet)
+                break
 
-        lib.waitFor(flags.IM_HERE)
-        lib.send(flags.GO_AHEAD)
+        if (packet['type'] == comandos.packet_type.COMMAND and packet['metadata']['command'] == comandos.command_type.PING):
+            print('PING recebido')
+            lib.send(
+                plib.build_command_packet(comandos.command_type.PONG)
+            )
+            print('PONG enviado')
 
         print("-------------------------")
         print("Comunicação aberta - SERVER")
         print("-------------------------")
 
-        try:
-            lib.waitFor(flags.START_TRANSMISSION)
-            lib.send(flags.GO_AHEAD)
+        last_index = 0
+        dados = b''
+        while True:
+            packet_bytes = plib.get_next_packet(lib)
+            print('\n'*3)
+            if packet_bytes is None:
+                print('Pacote não recebido')
+                break
+            else:
+                try:
+                    packet = plib.decode_packet(packet_bytes)
+                    print('Pacote recebido:', packet)
+                    if (packet['type'] == comandos.packet_type.DATA):
+                        print('Dado recebido:', packet['data'])
 
-            all_commands = []
+                        if (packet['metadata']['index'] != last_index + 1):
+                            print('Índice inválido')
+                            lib.send(
+                                plib.build_command_packet(comandos.command_type.NACK)
+                            )
+                            break
 
-            while True:
-                time.sleep(0.1)
-                print('Esperando pedido de comando')
-                flag = lib.waitFor([flags.START_COMMAND, flags.COMMANDS_DONE])
-                if flag == flags.COMMANDS_DONE:
+                        dados = dados + packet['data']
+
+                        last_index = packet['metadata']['index']
+                        lib.send(
+                            plib.build_command_packet(comandos.command_type.ACK) # FORÇAR ACK AQUI  
+                        )
+                        print('ACK enviado')
+
+                        print(progressbar(packet['metadata']['index'], packet['metadata']['total']))
+
+                        if (packet['metadata']['index'] == packet['metadata']['total']):
+                            print('Último pacote recebido')
+                            break
+                except Exception as e:
+                    print(e)
+                    print('Pacote inválido')
+                    lib.send(
+                        plib.build_command_packet(comandos.command_type.NACK)
+                    )
                     break
-                lib.send(flags.GO_AHEAD)
-                print('Comando autorizado, aguardando dados')
-                collected = lib.getAllUntil(flags.END_COMMAND)
-                print(collected)
-                all_commands.append(collected)
-                print('Comando recebido, liberando próxima requisição')
-                time.sleep(0.3)
-                lib.send(flags.GO_AHEAD)
 
-            print('Recebidos todos os comandos')
-            print(all_commands)
+        lib.send(
+            plib.build_command_packet(comandos.command_type.TRANSMISSION_OK)
+        )
 
-            lib.send(flags.FEEDBACK_READY)
-            lib.waitFor(flags.GO_AHEAD)
-            time.sleep(0.5)
-            print('Sending feedback count')
-            lib.send(len(all_commands).to_bytes(1, 'big'))
-            time.sleep(0.3)
-            lib.send(flags.FEEDBACK_DONE)
-            result = lib.waitFor([flags.FEEDBACK_OK, flags.FEEDBACK_ERROR])
-            
-            if result == flags.FEEDBACK_OK:
-                print('COMANDOS RECEBIDOS COM SUCESSO')
-            elif result == flags.FEEDBACK_ERROR:
-                print('ERRO NO RECEBIMENTO DOS COMANDOS')
+        print("-------------------------")
+        print("Comunicação encerrada")
+        print("-------------------------")
+        com1.disable()
 
-        except KeyboardInterrupt:
-            print('interrupted!')
-            exit(1)
+        print('Dados recebidos:', dados)
+
+    except KeyboardInterrupt:
+        print('interrupted!')
+        exit(1)
 
         '''
 
@@ -134,10 +167,6 @@ def main():
         f.close()
     '''
         # Encerra comunicação
-        print("-------------------------")
-        print("Comunicação encerrada")
-        print("-------------------------")
-        com1.disable()
         
     except Exception as erro:
         print("ops! :-\\")
