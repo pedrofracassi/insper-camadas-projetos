@@ -7,7 +7,7 @@ class ComLib:
         self.com = com
 
     def waitFor(self, flag):
-            time.sleep(.3)
+            time.sleep(.01)
             print(f"Esperando por {flag}")
             timeout = time.time() + 5
             while True:
@@ -20,7 +20,7 @@ class ComLib:
                   rxBuffer, _ = self.com.getData(1)
                   if rxBuffer == flag or rxBuffer in flag:
                       print(f"> {rxBuffer}")
-                      time.sleep(.1)
+                      time.sleep(.01)
                       return rxBuffer
               except KeyboardInterrupt:
                 break

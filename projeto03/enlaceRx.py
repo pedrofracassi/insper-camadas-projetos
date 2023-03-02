@@ -29,7 +29,7 @@ class RX(object):
                 rxTemp, nRx = self.fisica.read(self.READLEN)
                 if (nRx > 0):
                     self.buffer += rxTemp  
-                time.sleep(0.01)
+                time.sleep(0.005)
 
     def threadStart(self):       
         self.thread = threading.Thread(target=self.thread, args=())
@@ -72,7 +72,7 @@ class RX(object):
         while self.getBufferLen() < size:
             if time.time() > timeout:
                 return None
-            time.sleep(1)
+            time.sleep(0.005)
         return self.getBuffer(size)
 
     def clearBuffer(self):

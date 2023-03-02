@@ -25,7 +25,9 @@ print(f'Porta selecionada: {serialName}')
 #serialName = "/dev/tty.usbmodem1411" # Mac    (variacao de)
 
 def progressbar(current: int, total: int):
-    return f"[{'='*current}{'-'*(total-current)}] {current}/{total}"
+    percent_done = round((current / total)*50)
+    percent_remaining = 50 - percent_done
+    return f"[{'='*percent_done}{'-'*(percent_remaining)}] {current}/{total}"
 
 def main():
     try:
@@ -115,6 +117,10 @@ def main():
         com1.disable()
 
         print('Dados recebidos:', dados)
+
+        f = open('img_recebida.png', 'wb')
+        f.write(dados)
+        f.close()
 
     except KeyboardInterrupt:
         print('interrupted!')
