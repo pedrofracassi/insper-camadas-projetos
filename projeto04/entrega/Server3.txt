@@ -1,0 +1,24 @@
+[2023-03-14T20:15:54] Selecionando porta automaticamente...
+[2023-03-14T20:15:54] Porta selecionada: COM2
+[2023-03-14T20:15:54] Iniciou o SERVER
+[2023-03-14T20:15:56] DECODED Packet(header=Header(message_type=b'\x01', total_packets=30, last_successful_packet=0, server_id=1, current_packet=None, file_id=196, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:15:56] PACOTE HELLO RECEBIDO!
+[2023-03-14T20:15:56] Enviando Ready...
+[2023-03-14T20:15:56] ENCODING Packet(header=Header(message_type=b'\x02', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=196, payload_size=None, restart_from=0), payload=b'')
+[2023-03-14T20:15:57] DECODED Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=1, file_id=None, payload_size=114, restart_from=None), payload=b'According to all known laws of aviation, there is no way a bee should be able to fly.\r\nIts wings are too small to ')
+[2023-03-14T20:15:57] PACOTE 1 RECEBIDO!
+[2023-03-14T20:15:57] ENCODING Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=2, server_id=1, current_packet=None, file_id=196, payload_size=None, restart_from=0), payload=b'')
+[2023-03-14T20:15:57] DECODED Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=2, file_id=None, payload_size=114, restart_from=None), payload=b"get its fat little body off the ground.\r\nThe bee, of course, flies anyway because bees don't care what humans thin")
+[2023-03-14T20:15:57] PACOTE 2 RECEBIDO!
+[2023-03-14T20:15:57] ENCODING Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=3, server_id=1, current_packet=None, file_id=196, payload_size=None, restart_from=0), payload=b'')
+[2023-03-14T20:16:02] Nenhum novo pacote recebido dentro de 5 segundos.
+[2023-03-14T20:16:07] Nenhum novo pacote recebido dentro de 5 segundos.
+[2023-03-14T20:16:12] Nenhum novo pacote recebido dentro de 5 segundos.
+[2023-03-14T20:16:17] Nenhum novo pacote recebido dentro de 5 segundos.
+[2023-03-14T20:16:22] Mais de 20 segundos sem resposta, encerrando comunicação.
+[2023-03-14T20:16:22] ENCODING Packet(header=Header(message_type=b'\x05', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=0), payload=b'')
+[2023-03-14T20:16:23] -------------------------
+[2023-03-14T20:16:23] b"According to all known laws of aviation, there is no way a bee should be able to fly.\r\nIts wings are too small to get its fat little body off the ground.\r\nThe bee, of course, flies anyway because bees don't care what humans thin"
+[2023-03-14T20:16:23] -------------------------
+[2023-03-14T20:16:23] Erro na transmissão.
+[2023-03-14T20:16:23] -------------------------

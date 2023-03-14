@@ -1,0 +1,175 @@
+[2023-03-14T20:09:36] Porta selecionada: COM1
+[2023-03-14T20:09:36] Iniciou o main
+[2023-03-14T20:09:36] -------------------------
+[2023-03-14T20:09:36] ENCODING Packet(header=Header(message_type=b'\x01', total_packets=30, last_successful_packet=0, server_id=1, current_packet=None, file_id=221, payload_size=None, restart_from=0), payload=b'')
+[2023-03-14T20:09:41] Nenhum pacote recebido
+[2023-03-14T20:09:41] ENCODING Packet(header=Header(message_type=b'\x01', total_packets=30, last_successful_packet=0, server_id=1, current_packet=None, file_id=221, payload_size=None, restart_from=0), payload=b'')
+[2023-03-14T20:09:42] DECODED Packet(header=Header(message_type=b'\x02', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=221, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:42] -------------------------
+[2023-03-14T20:09:42] Iniciando comunicação
+[2023-03-14T20:09:42] -------------------------
+[2023-03-14T20:09:42] Enviando pacote 1
+[2023-03-14T20:09:42] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=1, file_id=221, payload_size=114, restart_from=0), payload=b'According to all known laws of aviation, there is no way a bee should be able to fly.\r\nIts wings are too small to ')
+[2023-03-14T20:09:42] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=2, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:42] ACK do pacote 1 recebido!
+[2023-03-14T20:09:42] Enviando pacote 0
+[2023-03-14T20:09:42] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=0, file_id=221, payload_size=60, restart_from=0), payload=b"on years.\r\nSo you'll just work us to death?\r\nWe'll sure try.")
+[2023-03-14T20:09:43] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=2), payload=b'')
+[2023-03-14T20:09:43] Servidor reportou erro e solicitou continuar do pacote 2.
+[2023-03-14T20:09:43] Enviando pacote 2
+[2023-03-14T20:09:43] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=2, file_id=221, payload_size=114, restart_from=0), payload=b"get its fat little body off the ground.\r\nThe bee, of course, flies anyway because bees don't care what humans thin")
+[2023-03-14T20:09:43] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=3, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:43] ACK do pacote 2 recebido!
+[2023-03-14T20:09:43] Enviando pacote 3
+[2023-03-14T20:09:43] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=3, file_id=221, payload_size=114, restart_from=0), payload=b"k is impossible.\r\nYellow, black. Yellow, black. Yellow, black. Yellow, black.\r\nOoh, black and yellow!\r\nLet's shake")
+[2023-03-14T20:09:44] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=4, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:44] ACK do pacote 3 recebido!
+[2023-03-14T20:09:44] Enviando pacote 4
+[2023-03-14T20:09:44] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=4, file_id=221, payload_size=114, restart_from=0), payload=b' it up a little.\r\nBarry! Breakfast is ready!\r\nComing!\r\nHang on a second.\r\nHello?\r\nBarry?\r\nAdam?\r\nCan you believe t')
+[2023-03-14T20:09:44] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=5, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:44] ACK do pacote 4 recebido!
+[2023-03-14T20:09:44] Enviando pacote 5
+[2023-03-14T20:09:44] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=5, file_id=221, payload_size=114, restart_from=0), payload=b"his is happening?\r\nI can't.\r\nI'll pick you up.\r\nLooking sharp.\r\nUse the stairs, Your father paid good money for th")
+[2023-03-14T20:09:45] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=6, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:45] ACK do pacote 5 recebido!
+[2023-03-14T20:09:45] Enviando pacote 6
+[2023-03-14T20:09:45] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=6, file_id=221, payload_size=114, restart_from=0), payload=b"ose.\r\nSorry. I'm excited.\r\nHere's the graduate.\r\nWe're very proud of you, son.\r\nA perfect report card, all B's.\r\nV")
+[2023-03-14T20:09:46] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=7, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:46] ACK do pacote 6 recebido!
+[2023-03-14T20:09:46] Enviando pacote 1
+[2023-03-14T20:09:46] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=1, file_id=221, payload_size=114, restart_from=0), payload=b'According to all known laws of aviation, there is no way a bee should be able to fly.\r\nIts wings are too small to ')
+[2023-03-14T20:09:46] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=7), payload=b'')
+[2023-03-14T20:09:46] Servidor reportou erro e solicitou continuar do pacote 7.
+[2023-03-14T20:09:46] Enviando pacote 4
+[2023-03-14T20:09:46] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=4, file_id=221, payload_size=114, restart_from=0), payload=b' it up a little.\r\nBarry! Breakfast is ready!\r\nComing!\r\nHang on a second.\r\nHello?\r\nBarry?\r\nAdam?\r\nCan you believe t')
+[2023-03-14T20:09:46] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=7), payload=b'')
+[2023-03-14T20:09:46] Servidor reportou erro e solicitou continuar do pacote 7.
+[2023-03-14T20:09:46] Enviando pacote 7
+[2023-03-14T20:09:46] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=7, file_id=221, payload_size=114, restart_from=0), payload=b"ery proud.\r\nMa! I got a thing going here.\r\nYou got lint on your fuzz.\r\nOw! That's me!\r\nWave to us! We'll be in row")
+[2023-03-14T20:09:47] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=8, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:47] ACK do pacote 7 recebido!
+[2023-03-14T20:09:47] Enviando pacote 8
+[2023-03-14T20:09:47] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=8, file_id=221, payload_size=114, restart_from=0), payload=b' 118,000.\r\nBye!\r\nBarry, I told you, stop flying in the house!\r\nHey, Adam.\r\nHey, Barry.\r\nIs that fuzz gel?\r\nA littl')
+[2023-03-14T20:09:48] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=9, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:48] ACK do pacote 8 recebido!
+[2023-03-14T20:09:48] Enviando pacote 24
+[2023-03-14T20:09:48] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=24, file_id=221, payload_size=114, restart_from=0), payload=b'ery aspect of bee existence.\r\nThese bees are stress-testing a new helmet technology.\r\nWhat do you think he makes?\r')
+[2023-03-14T20:09:48] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=9), payload=b'')
+[2023-03-14T20:09:48] Servidor reportou erro e solicitou continuar do pacote 9.
+[2023-03-14T20:09:48] Enviando pacote 9
+[2023-03-14T20:09:48] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=9, file_id=221, payload_size=114, restart_from=0), payload=b"e. Special day, graduation.\r\nNever thought I'd make it.\r\nThree days grade school, three days high school.\r\nThose w")
+[2023-03-14T20:09:48] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=10, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:48] ACK do pacote 9 recebido!
+[2023-03-14T20:09:49] Enviando pacote 10
+[2023-03-14T20:09:49] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=10, file_id=221, payload_size=114, restart_from=0), payload=b"ere awkward.\r\nThree days college. I'm glad I took a day and hitchhiked around The Hive.\r\nYou did come back differe")
+[2023-03-14T20:09:49] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=11, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:49] ACK do pacote 10 recebido!
+[2023-03-14T20:09:49] Enviando pacote 11
+[2023-03-14T20:09:49] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=11, file_id=221, payload_size=114, restart_from=0), payload=b'nt.\r\nHi, Barry. Artie, growing a mustache? Looks good.\r\nHear about Frankie?\r\nYeah.\r\nYou going to the funeral?\r\nNo,')
+[2023-03-14T20:09:49] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=12, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:49] ACK do pacote 11 recebido!
+[2023-03-14T20:09:49] Enviando pacote 12
+[2023-03-14T20:09:49] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=12, file_id=221, payload_size=114, restart_from=0), payload=b" I'm not going.\r\nEverybody knows, sting someone, you die.\r\nDon't waste it on a squirrel.\r\nSuch a hothead.\r\nI guess")
+[2023-03-14T20:09:50] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=13, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:50] ACK do pacote 12 recebido!
+[2023-03-14T20:09:50] Enviando pacote 13
+[2023-03-14T20:09:50] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=13, file_id=221, payload_size=114, restart_from=0), payload=b" he could have just gotten out of the way.\r\nI love this incorporating an amusement park into our day.\r\nThat's why ")
+[2023-03-14T20:09:50] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=14, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:50] ACK do pacote 13 recebido!
+[2023-03-14T20:09:50] Enviando pacote 21
+[2023-03-14T20:09:50] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=21, file_id=221, payload_size=114, restart_from=0), payload=b'he nectar to The Hive.\r\nOur top-secret formula is automatically color-corrected, scent-adjusted and bubble-contour')
+[2023-03-14T20:09:51] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=14), payload=b'')
+[2023-03-14T20:09:51] Servidor reportou erro e solicitou continuar do pacote 14.
+[2023-03-14T20:09:51] Enviando pacote 14
+[2023-03-14T20:09:51] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=14, file_id=221, payload_size=114, restart_from=0), payload=b"we don't need vacations.\r\nBoy, quite a bit of pomp under the circumstances.\r\nWell, Adam, today we are men.\r\nWe are")
+[2023-03-14T20:09:51] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=15, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:51] ACK do pacote 14 recebido!
+[2023-03-14T20:09:51] Enviando pacote 4
+[2023-03-14T20:09:51] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=4, file_id=221, payload_size=114, restart_from=0), payload=b' it up a little.\r\nBarry! Breakfast is ready!\r\nComing!\r\nHang on a second.\r\nHello?\r\nBarry?\r\nAdam?\r\nCan you believe t')
+[2023-03-14T20:09:52] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=15), payload=b'')
+[2023-03-14T20:09:52] Servidor reportou erro e solicitou continuar do pacote 15.
+[2023-03-14T20:09:52] Enviando pacote 12
+[2023-03-14T20:09:52] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=12, file_id=221, payload_size=114, restart_from=0), payload=b" I'm not going.\r\nEverybody knows, sting someone, you die.\r\nDon't waste it on a squirrel.\r\nSuch a hothead.\r\nI guess")
+[2023-03-14T20:09:52] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=15), payload=b'')
+[2023-03-14T20:09:52] Servidor reportou erro e solicitou continuar do pacote 15.
+[2023-03-14T20:09:52] Enviando pacote 15
+[2023-03-14T20:09:52] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=15, file_id=221, payload_size=114, restart_from=0), payload=b'!\r\nBee-men.\r\nAmen!\r\nHallelujah!\r\nStudents, faculty, distinguished bees,\r\nplease welcome Dean Buzzwell.\r\nWelcome, N')
+[2023-03-14T20:09:53] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=16, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:53] ACK do pacote 15 recebido!
+[2023-03-14T20:09:53] Enviando pacote 16
+[2023-03-14T20:09:53] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=16, file_id=221, payload_size=114, restart_from=0), payload=b'ew Hive City graduating class of 9:15.\r\nThat concludes our ceremonies And begins your career at Honex Industries!\r')
+[2023-03-14T20:09:53] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=17, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:53] ACK do pacote 16 recebido!
+[2023-03-14T20:09:53] Enviando pacote 13
+[2023-03-14T20:09:53] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=13, file_id=221, payload_size=114, restart_from=0), payload=b" he could have just gotten out of the way.\r\nI love this incorporating an amusement park into our day.\r\nThat's why ")
+[2023-03-14T20:09:53] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=17), payload=b'')
+[2023-03-14T20:09:53] Servidor reportou erro e solicitou continuar do pacote 17.
+[2023-03-14T20:09:53] Enviando pacote 17
+[2023-03-14T20:09:53] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=17, file_id=221, payload_size=114, restart_from=0), payload=b"\nWill we pick our job today?\r\nI heard it's just orientation.\r\nHeads up! Here we go.\r\nKeep your hands and antennas ")
+[2023-03-14T20:09:54] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=18, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:54] ACK do pacote 17 recebido!
+[2023-03-14T20:09:54] Enviando pacote 18
+[2023-03-14T20:09:54] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=18, file_id=221, payload_size=114, restart_from=0), payload=b"inside the tram at all times.\r\nWonder what it'll be like?\r\nA little scary.\r\nWelcome to Honex, a division of Honesc")
+[2023-03-14T20:09:54] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=19, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:54] ACK do pacote 18 recebido!
+[2023-03-14T20:09:54] Enviando pacote 19
+[2023-03-14T20:09:54] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=19, file_id=221, payload_size=114, restart_from=0), payload=b'o and a part of the Hexagon Group.\r\nThis is it!\r\nWow.\r\nWow.\r\nWe know that you, as a bee, have worked your whole li')
+[2023-03-14T20:09:54] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=20, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:54] ACK do pacote 19 recebido!
+[2023-03-14T20:09:55] Enviando pacote 20
+[2023-03-14T20:09:55] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=20, file_id=221, payload_size=114, restart_from=0), payload=b'fe to get to the point where you can work for your whole life.\r\nHoney begins when our valiant Pollen Jocks bring t')
+[2023-03-14T20:09:55] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=21, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:55] ACK do pacote 20 recebido!
+[2023-03-14T20:09:55] Enviando pacote 21
+[2023-03-14T20:09:55] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=21, file_id=221, payload_size=114, restart_from=0), payload=b'he nectar to The Hive.\r\nOur top-secret formula is automatically color-corrected, scent-adjusted and bubble-contour')
+[2023-03-14T20:09:55] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=22, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:55] ACK do pacote 21 recebido!
+[2023-03-14T20:09:55] Enviando pacote 22
+[2023-03-14T20:09:55] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=22, file_id=221, payload_size=114, restart_from=0), payload=b"ed into this soothing sweet syrup with its distinctive golden glow you know as... Honey!\r\nThat girl was hot.\r\nShe'")
+[2023-03-14T20:09:56] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=23, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:56] ACK do pacote 22 recebido!
+[2023-03-14T20:09:56] Enviando pacote 23
+[2023-03-14T20:09:56] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=23, file_id=221, payload_size=114, restart_from=0), payload=b"s my cousin!\r\nShe is?\r\nYes, we're all cousins.\r\nRight. You're right.\r\nAt Honex, we constantly strive to improve ev")
+[2023-03-14T20:09:56] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=24, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:56] ACK do pacote 23 recebido!
+[2023-03-14T20:09:56] Enviando pacote 24
+[2023-03-14T20:09:56] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=24, file_id=221, payload_size=114, restart_from=0), payload=b'ery aspect of bee existence.\r\nThese bees are stress-testing a new helmet technology.\r\nWhat do you think he makes?\r')
+[2023-03-14T20:09:57] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=25, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:57] ACK do pacote 24 recebido!
+[2023-03-14T20:09:57] Enviando pacote 29
+[2023-03-14T20:09:57] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=29, file_id=221, payload_size=114, restart_from=0), payload=b"hat.\r\nWhat's the difference?\r\nYou'll be happy to know that bees, as a species, haven't had one day off in 27 milli")
+[2023-03-14T20:09:57] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=25), payload=b'')
+[2023-03-14T20:09:57] Servidor reportou erro e solicitou continuar do pacote 25.
+[2023-03-14T20:09:57] Enviando pacote 25
+[2023-03-14T20:09:57] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=25, file_id=221, payload_size=114, restart_from=0), payload=b'\nNot enough.\r\nHere we have our latest advancement, the Krelman.\r\nWhat does that do?\r\nCatches that little strand of')
+[2023-03-14T20:09:58] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=26, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:58] ACK do pacote 25 recebido!
+[2023-03-14T20:09:58] Enviando pacote 26
+[2023-03-14T20:09:58] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=26, file_id=221, payload_size=114, restart_from=0), payload=b' honey that hangs after you pour it.\r\nSaves us millions.\r\nCan anyone work on the Krelman?\r\nOf course. Most bee job')
+[2023-03-14T20:09:58] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=27, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:58] ACK do pacote 26 recebido!
+[2023-03-14T20:09:59] Enviando pacote 27
+[2023-03-14T20:09:59] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=27, file_id=221, payload_size=114, restart_from=0), payload=b"s are small ones.\r\nBut bees know that every small job, if it's done well, means a lot.\r\nBut choose carefully becau")
+[2023-03-14T20:09:59] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=28, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:09:59] ACK do pacote 27 recebido!
+[2023-03-14T20:09:59] Enviando pacote 28
+[2023-03-14T20:09:59] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=28, file_id=221, payload_size=114, restart_from=0), payload=b"se you'll stay in the job you pick for the rest of your life.\r\nThe same job the rest of your life? I didn't know t")
+[2023-03-14T20:10:00] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=29, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:10:00] ACK do pacote 28 recebido!
+[2023-03-14T20:10:00] Enviando pacote 6
+[2023-03-14T20:10:00] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=6, file_id=221, payload_size=114, restart_from=0), payload=b"ose.\r\nSorry. I'm excited.\r\nHere's the graduate.\r\nWe're very proud of you, son.\r\nA perfect report card, all B's.\r\nV")
+[2023-03-14T20:10:00] DECODED Packet(header=Header(message_type=b'\x06', total_packets=0, last_successful_packet=0, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=29), payload=b'')
+[2023-03-14T20:10:00] Servidor reportou erro e solicitou continuar do pacote 29.
+[2023-03-14T20:10:00] Enviando pacote 29
+[2023-03-14T20:10:00] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=29, file_id=221, payload_size=114, restart_from=0), payload=b"hat.\r\nWhat's the difference?\r\nYou'll be happy to know that bees, as a species, haven't had one day off in 27 milli")
+[2023-03-14T20:10:01] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=30, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:10:01] ACK do pacote 29 recebido!
+[2023-03-14T20:10:01] Enviando pacote 30
+[2023-03-14T20:10:01] ENCODING Packet(header=Header(message_type=b'\x03', total_packets=30, last_successful_packet=0, server_id=1, current_packet=30, file_id=221, payload_size=60, restart_from=0), payload=b"on years.\r\nSo you'll just work us to death?\r\nWe'll sure try.")
+[2023-03-14T20:10:01] DECODED Packet(header=Header(message_type=b'\x04', total_packets=0, last_successful_packet=31, server_id=1, current_packet=None, file_id=None, payload_size=None, restart_from=None), payload=b'')
+[2023-03-14T20:10:01] ACK do pacote 30 recebido!
+[2023-03-14T20:10:01] -------------------------
+[2023-03-14T20:10:01] b"According to all known laws of aviation, there is no way a bee should be able to fly.\r\nIts wings are too small to get its fat little body off the ground.\r\nThe bee, of course, flies anyway because bees don't care what humans think is impossible.\r\nYellow, black. Yellow, black. Yellow, black. Yellow, black.\r\nOoh, black and yellow!\r\nLet's shake it up a little.\r\nBarry! Breakfast is ready!\r\nComing!\r\nHang on a second.\r\nHello?\r\nBarry?\r\nAdam?\r\nCan you believe this is happening?\r\nI can't.\r\nI'll pick you up.\r\nLooking sharp.\r\nUse the stairs, Your father paid good money for those.\r\nSorry. I'm excited.\r\nHere's the graduate.\r\nWe're very proud of you, son.\r\nA perfect report card, all B's.\r\nVery proud.\r\nMa! I got a thing going here.\r\nYou got lint on your fuzz.\r\nOw! That's me!\r\nWave to us! We'll be in row 118,000.\r\nBye!\r\nBarry, I told you, stop flying in the house!\r\nHey, Adam.\r\nHey, Barry.\r\nIs that fuzz gel?\r\nA little. Special day, graduation.\r\nNever thought I'd make it.\r\nThree days grade school, three days high school.\r\nThose were awkward.\r\nThree days college. I'm glad I took a day and hitchhiked around The Hive.\r\nYou did come back different.\r\nHi, Barry. Artie, growing a mustache? Looks good.\r\nHear about Frankie?\r\nYeah.\r\nYou going to the funeral?\r\nNo, I'm not going.\r\nEverybody knows, sting someone, you die.\r\nDon't waste it on a squirrel.\r\nSuch a hothead.\r\nI guess he could have just gotten out of the way.\r\nI love this incorporating an amusement park into our day.\r\nThat's why we don't need vacations.\r\nBoy, quite a bit of pomp under the circumstances.\r\nWell, Adam, today we are men.\r\nWe are!\r\nBee-men.\r\nAmen!\r\nHallelujah!\r\nStudents, faculty, distinguished bees,\r\nplease welcome Dean Buzzwell.\r\nWelcome, New Hive City graduating class of 9:15.\r\nThat concludes our ceremonies And begins your career at Honex Industries!\r\nWill we pick our job today?\r\nI heard it's just orientation.\r\nHeads up! Here we go.\r\nKeep your hands and antennas inside the tram at all times.\r\nWonder what it'll be like?\r\nA little scary.\r\nWelcome to Honex, a division of Honesco and a part of the Hexagon Group.\r\nThis is it!\r\nWow.\r\nWow.\r\nWe know that you, as a bee, have worked your whole life to get to the point where you can work for your whole life.\r\nHoney begins when our valiant Pollen Jocks bring the nectar to The Hive.\r\nOur top-secret formula is automatically color-corrected, scent-adjusted and bubble-contoured into this soothing sweet syrup with its distinctive golden glow you know as... Honey!\r\nThat girl was hot.\r\nShe's my cousin!\r\nShe is?\r\nYes, we're all cousins.\r\nRight. You're right.\r\nAt Honex, we constantly strive to improve every aspect of bee existence.\r\nThese bees are stress-testing a new helmet technology.\r\nWhat do you think he makes?\r\nNot enough.\r\nHere we have our latest advancement, the Krelman.\r\nWhat does that do?\r\nCatches that little strand of honey that hangs after you pour it.\r\nSaves us millions.\r\nCan anyone work on the Krelman?\r\nOf course. Most bee jobs are small ones.\r\nBut bees know that every small job, if it's done well, means a lot.\r\nBut choose carefully because you'll stay in the job you pick for the rest of your life.\r\nThe same job the rest of your life? I didn't know that.\r\nWhat's the difference?\r\nYou'll be happy to know that bees, as a species, haven't had one day off in 27 million years.\r\nSo you'll just work us to death?\r\nWe'll sure try."
+[2023-03-14T20:10:01] -------------------------
+[2023-03-14T20:10:02] Transmissão feita com sucesso
+[2023-03-14T20:10:02] -------------------------
