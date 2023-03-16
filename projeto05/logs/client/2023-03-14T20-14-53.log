@@ -1,0 +1,4 @@
+[2023-03-14T20:14:54] Porta selecionada: COM1
+[2023-03-14T20:14:54] Iniciou o main
+[2023-03-14T20:14:54] -------------------------
+[2023-03-14T20:14:54] ENCODING Packet(header=Header(message_type=b'\x01', total_packets=30, last_successful_packet=0, server_id=1, current_packet=None, file_id=151, payload_size=None, restart_from=0), payload=b'')
