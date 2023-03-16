@@ -4,6 +4,8 @@ from comandos import flags, message_type
 from comlib import ComLib
 from dataclasses import dataclass
 
+import crc16 
+
 @dataclass
 class Header:
   message_type: bytearray
@@ -14,6 +16,8 @@ class Header:
   file_id: int = None
   payload_size: int = None
   restart_from: int = 0
+
+  crc: bytearray = b'\x00\x00'
 
   @classmethod
   def decode(self, data: bytearray):
@@ -28,6 +32,8 @@ class Header:
       payload_size=int.from_bytes(data[5:6], 'big') if curr_message_type == message_type.DATA_3 else None,
       restart_from=int.from_bytes(data[6:7], 'big') if curr_message_type == message_type.ERROR_6 else None,
       last_successful_packet=int.from_bytes(data[7:8], 'big'),
+
+      crc = data[8:10],
     )
 
   def encode(self):
@@ -42,8 +48,9 @@ class Header:
       self.file_id.to_bytes(1, 'big') if self.message_type in [message_type.HELLO_1, message_type.READY_2] else self.payload_size.to_bytes(1, 'big') if self.message_type == message_type.DATA_3 else b'\x00',
       self.restart_from.to_bytes(1, 'big') if self.restart_from is not None else b'\x00',
       self.last_successful_packet.to_bytes(1, 'big') if self.last_successful_packet is not None else b'\x00',
-      b'\x00', # CRC
-      b'\x00', # CRC
+      
+      self.crc[0:1], 
+      self.crc[1:2],
     ]
 
     joined = b''
@@ -66,6 +73,9 @@ class Packet:
         logger.log(*msg)
 
     logif('ENCODING', self)
+
+    self.header.crc = crc16.crc16xmodem(self.payload).to_bytes(2, 'big')
+
     encoded = self.header.encode() + self.payload + flags.EOP
     return encoded
 
